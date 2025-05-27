@@ -1,0 +1,1 @@
+# personality_types-makineogrenmesi
