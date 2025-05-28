@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #fceabb, #ffcc33); /* daha soft */
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ebeae1; /* düz beyaz kart */
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h1 span {
+  font-size: 42px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fdfdfd;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+  border-color: #f8b500;
+  box-shadow: 0 0 5px rgba(248, 181, 0, 0.4);
+  outline: none;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #ffb347, #ffcc33);
+  color: #333;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 25px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #ffcc33, #ffb347);
+  transform: scale(1.02);
+}
+
+.response {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff9c4;
+  padding: 15px;
+  border-radius: 10px;
+  color: #8d6e63;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hidden {
+  display: none;
+}
