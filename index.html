@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kişilik Tahmini</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1><span>🧠</span> Kişilik Testi</h1>
+    <p class="intro">Aşağıdaki soruları cevapla, kişiliğini tahmin edelim!</p>
+
+    <form id="questionForm">
+      <div class="question">
+        <label>1.Sosyal etkinliklere katılmak seni heyecanlandırır mı?</label>
+        <select name="q1" required>
+          <option value="">Seçiniz</option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>2. Yakın çevrende sana destek olan çok sayıda kişi var mı?</label>
+        <select name="q2" required>
+          <option value="">Seçiniz</option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>3. Gün içinde yalnız kalmak sana kendini daha iyi hissettirir mi?</label>
+        <select name="q3" required>
+          <option value="">Seçiniz</option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>4. Kalabalık önünde fikirlerini rahatça ifade edebilir misin?</label>
+        <select name="q4" required>
+          <option value="">Seçiniz</option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>5. Sosyalleştikten sonra enerjinin arttığını hisseder misin??</label>
+        <select name="q5" required>
+          <option value="">Seçiniz</option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>6. 	Evde uzun süre kalınca dışarı çıkmak için güçlü bir istek hisseder misin?</label>
+        <select name="q6" required>
+          <option value="">Seçiniz</option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>7. Duygularını veya düşüncelerini sosyal medyada sık sık paylaşır mısın?</label>
+        <select name="q7" required>
+          <option value="">Seçiniz</option>
+          <option value="1">Evet</option>
+          <option value="0">Hayır</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">KİŞİLİĞİNİ ÖĞREN</button>
+    </form>
+
+    <div id="responseContainer" class="response hidden">
+      <p><strong>Tahmin:</strong> <span id="resultText">...</span></p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
